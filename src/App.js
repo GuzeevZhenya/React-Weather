@@ -4,12 +4,12 @@ import Input from "./components/Input";
 import CardList from "./components/CardList";
 
 function App() {
-  const [citiesList, setCitiesList] = useState(["New York", "Minsk", "Gomel"]);
+  const [citiesList, setCitiesList] = useState([]);
 
   return (
     <div className="main">
       <Input setCitiesList={setCitiesList} />
-      <CardList citiesList={citiesList}/>
+      <CardList citiesList={citiesList} />
     </div>
   );
 }
